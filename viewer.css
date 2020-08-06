@@ -1,0 +1,176 @@
+@charset "utf-8";
+.log {
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: auto;
+	padding: 8px;
+}
+.roomPic {
+	height: 100%;
+}
+.roomName {
+	padding: 4px;
+	border: 1px solid black;
+	margin: 2px;
+	border-radius: 8px;
+	grid-row: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.bottomRow {
+	grid-row: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	border: 2px solid black;
+	padding: 8px;
+	margin: 4px;
+}
+.bottomFrames {
+	grid-template-rows: auto;
+	grid-template-columns: 5em 1fr 1fr 1fr 1fr 1fr;
+	display: grid;
+	height: 100%;
+	width: 100%;
+}
+.navCompass {
+	border: 1px solid black;
+	padding: 4px;
+	margin: 4px;
+}
+.gridContainer {
+	display: grid;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	grid-template-rows: 2fr auto 1fr auto;
+	grid-template-columns: 3fr 2fr;
+}
+.navUpDown {
+	border: 1px solid black;
+	padding: 4px;
+	margin: 4px;
+}
+.contentTemplate{
+	margin: 8px;
+	padding: 8px;
+	border: 1px solid black;
+	overflow-y: auto;
+	border-radius: 16px;	
+	}
+	.contentTemplate ul
+	{
+		list-style: none;
+		margin-left:2em;
+	}
+	
+	ul>li>a
+	{
+		display:block;
+		width:100%;
+		text-decoration: none;	
+	}
+	
+	ul>li
+	{
+		border-bottom: thin lightpink;
+		padding:2px;		
+	}
+	
+	ul>li:nth-child(even)
+	{
+		text-decoration: none;	
+		background-color: whitesmoke;				
+	}
+	
+		
+	ul>li:nth-child(odd)
+	{
+		text-decoration: none;	
+		background-color: aliceblue;		
+	}
+	
+.statusBar {
+	height: 1.5em;
+	border-top: 1px solid black;
+	padding: 2px;
+	margin-top: 2px;
+	grid-row: 4;
+	vertical-align: middle;
+}
+* {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
+}
+	.containerTemplate .header
+	{
+	text-align: center;
+	border: 1px solid black;
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	padding: 4px;
+	margin: 2px;
+	position: relative;
+	font-weight: bold;
+	left: 0;
+	right: 0;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"		
+	}
+	
+	.containerTemplate
+	{
+		height:100%;
+	}
+	
+	.navUpDown
+	{
+		display:grid;
+		grid-template-rows: 2em 1fr 2em;
+	}
+	
+	.navCompass
+	{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+.avatar
+{
+	max-height:512px;
+	max-width:512px;
+	text-align:center;
+	vertical-align: center;
+	align-content: center;
+	border: 1px solid pink;
+	width:512px;
+	overflow: hidden;
+}
+
+.navInOut
+{
+	display:grid;
+	grid-template-rows: 1fr 2em 2em 1fr;
+}
+
+.room
+{
+	padding-bottom: 2em;
+}
+
+.roomActions
+{
+	display:block;
+	padding: 4px;
+	margin:4px;
+	border-top:1px solid black;
+}
+
+.roomActions button
+{
+	display: block;
+	height: 2em;	
+	width: 100%;
+	margin-top: 4px;
+}
