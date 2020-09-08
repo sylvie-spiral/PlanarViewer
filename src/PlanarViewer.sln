@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30428.66
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Player", "Player\Player.njsproj", "{C8112760-C377-4A49-8FAE-6D8A2FC4760D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8112760-C377-4A49-8FAE-6D8A2FC4760D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8112760-C377-4A49-8FAE-6D8A2FC4760D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8112760-C377-4A49-8FAE-6D8A2FC4760D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8112760-C377-4A49-8FAE-6D8A2FC4760D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEB5AEEF-0F60-4966-A15F-887449A9A55E}
+	EndGlobalSection
+EndGlobal
