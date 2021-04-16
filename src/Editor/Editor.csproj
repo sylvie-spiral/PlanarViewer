@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\noun_copy_3403977.png" />
+    <None Remove="Images\noun_Cut_1880295.png" />
+    <None Remove="Images\noun_debugging_1978211.png" />
+    <None Remove="Images\noun_export_3538692.png" />
+    <None Remove="Images\noun_help_2232364.png" />
+    <None Remove="Images\noun_import_649993.png" />
+    <None Remove="Images\noun_paste_2980184.png" />
+    <None Remove="Images\noun_play_323952.png" />
+    <None Remove="Images\noun_Save_2766370.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\noun_copy_3403977.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_Cut_1880295.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_debugging_1978211.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_export_3538692.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_help_2232364.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_import_649993.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_paste_2980184.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_play_323952.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\noun_Save_2766370.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommonMark.NET" Version="0.15.1" />
+    <PackageReference Include="DynamicData" Version="7.1.1" />
+    <PackageReference Include="FFMpegCore" Version="4.1.0" />
+    <PackageReference Include="Fluent.Ribbon" Version="8.0.3" />
+    <PackageReference Include="IronScheme.Core" Version="1.0.231" />
+    <PackageReference Include="Jurassic" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Toolkit" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.1" />
+    <PackageReference Include="microsoft.web.webview2" Version="1.0.774.44" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Remotion.Linq" Version="2.2.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
+    <PackageReference Include="T4Image" Version="2.0.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
+  </ItemGroup>
+</Project>
