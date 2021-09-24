@@ -1,10 +1,9 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Image Source="/Images/noun_export_3538692.png" x:Key="Export" />
-    <Image Source="/Images/noun_import_649993.png" x:Key="Import" />
-    <Image Source="/Images/noun_Save_2766370.png" x:Key="Save" />
-    <Image Source="/Images/noun_play_323952.png" x:Key="Run" />
-    <Image Source="/Images/noun_debugging_1978211.png" x:Key="Debug" />
-    <Image Source="/Images/noun_help_2232364.png" x:Key="Help" />
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Image x:Key="Export" Source="/Images/noun_export_3538692.png" />
+    <Image x:Key="Import" Source="/Images/noun_import_649993.png" />
+    <Image x:Key="Save" Source="/Images/noun_Save_2766370.png" />
+    <Image x:Key="Run" Source="/Images/noun_play_323952.png" />
+    <Image x:Key="Debug" Source="/Images/noun_debugging_1978211.png" />
+    <Image x:Key="Help" Source="/Images/noun_help_2232364.png" />
 
 </ResourceDictionary>

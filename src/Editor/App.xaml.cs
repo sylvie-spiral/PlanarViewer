@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Editor.ViewModel;
+using Reactive.Bindings;
 using System.Windows;
 
 namespace Editor
@@ -12,6 +8,7 @@ namespace Editor
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
-    {        
+    {
+        public ReactiveProperty<PackageViewModel> Package { get; set; } = new(new PackageViewModel());
     }
 }

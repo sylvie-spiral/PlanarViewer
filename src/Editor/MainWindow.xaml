@@ -6,15 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Editor"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
     Title="Planar Editor"
     Width="1920"
     Height="1080"
     WindowState="Maximized"
     mc:Ignorable="d">
-    <Fluent:RibbonWindow.Resources>
-        <local:BrowserList x:Key="Browsers"/>
-        <local:ClipboardList x:Key="ClipboardFormats"/>
-    </Fluent:RibbonWindow.Resources>
+    <Fluent:RibbonWindow.Resources />
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -60,13 +58,38 @@
             <!--  Tabs  -->
             <Fluent:RibbonTabItem Header="Home">
                 <Fluent:RibbonGroupBox Header="Clipboard">
-                    <Fluent:SplitButton x:Name="Paste" Icon="{DynamicResource Fluent.Ribbon.Images.Paste}" LargeIcon="{DynamicResource Fluent.Ribbon.Images.Paste}" Width="64" Header="Paste" ItemsSource="{Binding Formats, Source={StaticResource ClipboardFormats}}" Command="Paste" />
-                    <Fluent:Button x:Name="Cut" Size="Middle" Icon="{DynamicResource Fluent.Ribbon.Images.Cut}" LargeIcon="{DynamicResource Fluent.Ribbon.Images.Cut}" Header="Cut" Command="Cut" />
-                    <Fluent:Button x:Name="Copy" Header="Copy" Size="Middle" Icon="{DynamicResource Fluent.Ribbon.Images.Copy}" LargeIcon="{DynamicResource Fluent.Ribbon.Images.Copy}" Command="Copy"/>
+                    <Fluent:SplitButton
+                        x:Name="Paste"
+                        Width="64"
+                        Command="Paste"
+                        Header="Paste"
+                        Icon="{DynamicResource Fluent.Ribbon.Images.Paste}"
+                        LargeIcon="{DynamicResource Fluent.Ribbon.Images.Paste}" />
+                    <Fluent:Button
+                        x:Name="Cut"
+                        Command="Cut"
+                        Header="Cut"
+                        Icon="{DynamicResource Fluent.Ribbon.Images.Cut}"
+                        LargeIcon="{DynamicResource Fluent.Ribbon.Images.Cut}"
+                        Size="Middle" />
+                    <Fluent:Button
+                        x:Name="Copy"
+                        Command="Copy"
+                        Header="Copy"
+                        Icon="{DynamicResource Fluent.Ribbon.Images.Copy}"
+                        LargeIcon="{DynamicResource Fluent.Ribbon.Images.Copy}"
+                        Size="Middle" />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="Test and Debug">
-                    <Fluent:SplitButton Header="Debug" Icon="{DynamicResource Debug}" LargeIcon="{DynamicResource Debug}" ItemsSource="{Binding Browsers, Source={StaticResource Browsers}}" DisplayMemberPath="Name" />
-                    <Fluent:Button Header="Run" Icon="{DynamicResource Run}" LargeIcon="{DynamicResource Run}"></Fluent:Button>
+                    <Fluent:SplitButton
+                        DisplayMemberPath="Name"
+                        Header="Debug"
+                        Icon="{DynamicResource Debug}"
+                        LargeIcon="{DynamicResource Debug}" />
+                    <Fluent:Button
+                        Header="Run"
+                        Icon="{DynamicResource Run}"
+                        LargeIcon="{DynamicResource Run}" />
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
 
@@ -97,37 +120,41 @@
                 HorizontalAlignment="Right"
                 Value="Your value which is also used as content if no content is set." />
         </Fluent:StatusBar>
-
         <TabControl Grid.Row="1">
-            <TabItem Header="Package">
+            <TabItem Header="Package" IsSelected="True">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="384" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0">Title</Label>
+                    <TextBox Grid.Row="0" Grid.Column="1" />
+                    <Label Grid.Row="1" Grid.Column="0">ID</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" />
 
-            </TabItem>
-            <TabItem Header="Rooms">
+                    <DockPanel Grid.Row="2" Grid.Column="0">
+                        <Label DockPanel.Dock="Top">Description</Label>
+                        <ScrollViewer>
+                            <TextBox />
+                        </ScrollViewer>
+                    </DockPanel>
+                    <wpf:WebView2 Grid.Row="2" Grid.Column="1" />
+                    <Label Grid.Row="3" Grid.Column="0">Authors</Label>
+                    <DockPanel Grid.Row="3" Grid.Column="1">
+                        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                            <Button>Add</Button>
+                            <Button>Delete</Button>
+                        </StackPanel>
+                        <ListBox />
+                    </DockPanel>
 
-            </TabItem>
-            <TabItem Header="Objects">
-
-            </TabItem>
-            <TabItem Header="Characters">
-
-            </TabItem>
-            <TabItem Header="Global Variables">
-
-            </TabItem>
-            <TabItem Header="Systems">
-
-            </TabItem>
-            <TabItem Header="Counters">
-
-            </TabItem>
-            <TabItem Header="Images">
-
-            </TabItem>
-            <TabItem Header="Videos">
-
-            </TabItem>
-            <TabItem Header="Audio">
-
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>

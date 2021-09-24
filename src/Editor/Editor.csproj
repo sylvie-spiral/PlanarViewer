@@ -51,18 +51,44 @@
   <ItemGroup>
     <PackageReference Include="CommonMark.NET" Version="0.15.1" />
     <PackageReference Include="DynamicData" Version="7.1.1" />
+    <PackageReference Include="EntityFrameworkCore.CommonTools" Version="2.0.2" />
     <PackageReference Include="FFMpegCore" Version="4.1.0" />
     <PackageReference Include="Fluent.Ribbon" Version="8.0.3" />
-    <PackageReference Include="IronScheme.Core" Version="1.0.231" />
     <PackageReference Include="Jurassic" Version="3.1.0" />
+    <PackageReference Include="LinqKit" Version="1.1.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="Microsoft.Toolkit" Version="7.0.1" />
     <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.1" />
     <PackageReference Include="microsoft.web.webview2" Version="1.0.774.44" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
+    <PackageReference Include="NotifyPropertyChangedGenerator" Version="1.1.1" />
+    <PackageReference Include="PInvoke.Windows.Core" Version="0.7.104" />
+    <PackageReference Include="ReactiveProperty" Version="7.8.3" />
+    <PackageReference Include="ReactiveProperty.WPF" Version="7.8.3" />
     <PackageReference Include="Remotion.Linq" Version="2.2.0" />
     <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
+    <PackageReference Include="System.Interactive.Async" Version="5.0.0" />
     <PackageReference Include="System.Reactive" Version="5.0.0" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
     <PackageReference Include="T4Image" Version="2.0.0" />
     <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
 </Project>
