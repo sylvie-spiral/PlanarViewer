@@ -72,7 +72,7 @@
     <PackageReference Include="Microsoft.Toolkit" Version="7.0.1" />
     <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.1" />
     <PackageReference Include="microsoft.web.webview2" Version="1.0.774.44" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
     <PackageReference Include="NotifyPropertyChangedGenerator" Version="1.1.1" />
     <PackageReference Include="PInvoke.Windows.Core" Version="0.7.104" />
